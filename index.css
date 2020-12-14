@@ -1,6 +1,15 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
 body {
+    background-color: grey;
     border: solid black 1px;
     height: 1000px;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
   
   .top-half {
@@ -10,18 +19,95 @@ body {
     border: 5px solid red;
   }
   
+h1 {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
   nav {
     border: 1px solid yellow;
-    padding: 80px;
-    width: 100px;
-    margin: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: 5%;
     display: flex;
     justify-content: space-around;
   }
-  
-  nav .links {
-    
+
+  a:link, a:visited {
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    display: inline-block;
   }
+  
+  a:hover {
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+  } 
+
+  .links {
+    width:30%;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    padding:2% 0;
+    border-radius:10px;
+    border:3px solid black;
+    transition:1s;
+  }
+
+  .home {
+    display:inline-block;
+    background-color: red;
+    width:110px;
+    text-align:center;
+    padding:2% 0;
+    border-radius:10px;
+    border: 3px solid black;
+    transition:1s;
+  }
+  
+  .about {
+    display:inline-block;
+    background-color: green;
+    width:110px;
+    text-align:center;
+    padding:2% 0;
+    border-radius:10px;
+    border:3px solid black;
+    transition:1s;
+  }
+  
+  .cons {
+    display:inline-block;
+    background-color: yellow;
+    width:110px;
+    text-align:center;
+    padding:2% 0;
+    border-radius:10px;
+    border:3px solid black;
+    transition:1s;
+  }
+  
+  .pro {
+    display:inline-block;
+    background-color: purple;
+    width:110px;
+    text-align:center;
+    padding:2% 0;
+    border-radius:10px;
+    border:3px solid black;
+    transition:1s;
+  }
+  
+   a.contact {
+     color: purple;
+     background-color: black;
+    }
   
   .hero-image{
       height:40vh;
@@ -40,4 +126,26 @@ body {
   
   img {
     padding:0 0 200px 0;
+  }
+
+  .flex1 {
+    /* I put borders around my containers to see what I am dealing with */
+    border: 5px solid pink;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    width:100%;
+  }
+
+  .flex2 {
+    /* I put borders around my containers to see what I am dealing with */
+    border: 5px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    width:100%;
   }
